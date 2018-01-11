@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
  **/
 public class GsonSerDesTest {
   private JsonSerDes serDes;
-  private ClassLoader classLoader = getClass().getClassLoader();
+  private final ClassLoader classLoader = getClass().getClassLoader();
 
   @Rule
   public final ExpectedException exception = ExpectedException.none();
